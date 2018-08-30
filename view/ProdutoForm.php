@@ -11,6 +11,7 @@ $conn = $database->getConnection();
 $categoria = new Categoria($conn);
 $categorias = $categoria->getAll();
 
+
 include_once "header.php";
 
 echo "<div class='right-button-margin'>";
@@ -31,7 +32,7 @@ echo "</div>";
       <?php
           //enquanto existir categorias
           //extrai os dados
-          while ($registro = $categorias->fetch(PDO::FETCH_ASSOC)){
+           while($registro = $categorias->fetch(PDO::FETCH_ASSOC)){
              //extraindo
               extract($registro);
               //imprimindo cada categoria        
