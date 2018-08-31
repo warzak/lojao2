@@ -15,6 +15,15 @@ class Produto{
       $this->conn = $db;
    }
 
+   public function getAll(){
+      $query = "SELECT * FROM ".$this->table_name." ORDER BY nome;";
+
+      $stmt = $this->conn->prepare($query);
+      $stmt->execute();
+
+      return $stmt;
+   }
+
    public function create(){
       $query = "INSERT INTO" . $this->table_name .
       "SET nome=:nome, valor=:valor, descricao=:descricao, categoria_id=:categoria_id, foto=:foto, criadoEm=:criadoEm";

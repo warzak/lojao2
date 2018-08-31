@@ -20,15 +20,17 @@ class Categoria{
       return $stmt;
    }
 
-   public function getName(){
+   public function getName($id){
       $query = "SELECT nome FROM ".$this->table_name." WHERE id=?;";
 
       $stmt = $this->conn->prepare($query);
-      $stmt->bindParam(1, 1);
+      $stmt->bindParam(1, $id);
       $stmt->execute();
       $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
       $this->nome = $row['nome'];
+
+      return $this->nome;
    }
 }
 
