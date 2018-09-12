@@ -19,7 +19,7 @@ echo "<div class='right-button-margin'>";
 echo "</div>";
 ?>
 
-<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
+<form class="form-horizontal" action="../controller/produto.php" method="POST" enctype="multipart/form-data">
    <fieldset>
 
    <!-- Text input-->
