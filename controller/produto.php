@@ -1,4 +1,5 @@
 <?php
+$page_title = "Cadastro de Produto";
 include_once "../view/header.php";
 include_once "../model/Database.php";
 include_once "../model/Produto.php";
