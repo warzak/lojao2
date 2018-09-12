@@ -14,10 +14,16 @@ $categoria = new Categoria($conn);
 //obtem os produtos
 $produtos = $produto->getAll();
 
+//obtem quantidade de produtos
+$num = $produtos->rowCount();
+
 include_once "header.php";
 ?>
 
 <div class='row'>
+<?php 
+if($num > 0){
+?>
    <table class='table table-hover table-bordered'>
       <tr>
             <th>ID</th>
@@ -47,4 +53,10 @@ include_once "header.php";
               echo "<td><img src='{$foto}'></td>";     echo "<td>{$criadoEm}</td>";           echo "</tr>";  
             }
       ?>
-</table>   
+</table>
+<?php 
+}else{
+   echo "<div class='alert alert-info'>Nenhum produto encontrado!</div>";
+}
+?>
+</div> 
