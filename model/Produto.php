@@ -25,8 +25,8 @@ class Produto{
    }
 
    public function create(){
-      $query = "INSERT INTO" . $this->table_name .
-      "SET nome=:nome, valor=:valor, descricao=:descricao, categoria_id=:categoria_id, foto=:foto, criadoEm=:criadoEm";
+      $query = "INSERT INTO " . $this->table_name .
+      " SET nome=:nome, valor=:valor, descricao=:descricao, categoria_id=:categoria_id, foto=:foto, criadoEm=:criadoEm";
 
       $stmt = $this->conn->prepare($query);
 
