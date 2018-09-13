@@ -50,7 +50,7 @@ if($num > 0){
          </td>";                   
 
               echo "<td>{$descricao}</td>";            echo "<td>{$valor}</td>";
-              echo "<td><img src='{$foto}'></td>";     echo "<td>{$criadoEm}</td>";           echo "</tr>";  
+              echo "<td><img style='width:64px;height:64px' src='../uploads/{$foto}'></td>";     echo "<td>{$criadoEm}</td>";           echo "</tr>";  
             }
       ?>
 </table>
