@@ -15,7 +15,7 @@ $categorias = $categoria->getAll();
 include_once "header.php";
 
 echo "<div class='right-button-margin'>";
-    echo "<a href='index.php' class='btn btn-default pull-right'>Listar Produtos</a>";
+    echo "<a href='ProdutoList.php' class='btn btn-default pull-right'>Listar Produtos</a>";
 echo "</div>";
 ?>
 
