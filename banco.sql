@@ -70,6 +70,35 @@ LOCK TABLES `produtos` WRITE;
 INSERT INTO `produtos` VALUES (1,3,'aaa','111',111,'teste.jpg','2018-09-12 19:59:48','2018-09-12 22:59:48'),(2,3,'aaa','111',111,'teste.jpg','2018-09-12 20:01:40','2018-09-12 23:01:40'),(3,3,'aaa','111',111,'teste.jpg','2018-09-12 20:02:50','2018-09-12 23:02:50'),(4,3,'111','111',111,'teste.jpg','2018-09-12 20:34:20','2018-09-12 23:34:20'),(5,3,'11','111',111,'0bf455a451d0deccc26b8afff6aca7eb74dc3dc3-tela.png','2018-09-12 21:07:27','2018-09-13 00:07:27');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` text NOT NULL,
+  `email` text NOT NULL,
+  `senha` text NOT NULL,
+  `nivel_acesso` varchar(10) NOT NULL,
+  `status` varchar(5) NOT NULL COMMENT '0=pendente,1=confirmado',
+  `criadoEm` datetime NOT NULL,
+  `alteradoEm` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -80,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-09-12 21:12:52
+-- Dump completed on 2018-09-12 21:31:14
