@@ -53,12 +53,12 @@
 <body>
  
     <div class="container">
-     <form class="form-signin">
+     <form action="controller/login.php" method="POST" class="form-signin">
             <h2 class="form-signin-heading">Entrar no Lojão2</h2>
             <label for="inputEmail" class="sr-only">Email</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
             <label for="inputPassword" class="sr-only">Senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Senha" required>
             <label>
                 <a href=#>Esqueci minha senha!</a>
               </label>
