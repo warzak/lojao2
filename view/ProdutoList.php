@@ -60,3 +60,31 @@ if($num > 0){
 }
 ?>
 </div> 
+
+        PrimeiroDedoPeDireitoComponent,
+        SegundoDedoPeDireitoComponent,
+        TerceiroDedoPeDireitoComponent,
+        QuartoDedoPeDireitoComponent,
+        QuintoDedoPeDireitoComponent,
+
+        PrimeiroDedoPeEsquerdoComponent,
+        SegundoDedoPeEsquerdoComponent,
+        TerceiroDedoPeEsquerdoComponent,
+        QuartoDedoPeEsquerdoComponent,
+        QuintoDedoPeEsquerdoComponent,        
+
+
+import {PrimeiroDedoMaoDireitaComponent} from './body/dedos-mao-direita-component';
+
+        this.examePrimeiroDedoMaoEsquerda = data.examePrimeiroDedoMaoEsquerda || '';
+        this.exameSegundoDedoMaoEsquerda = data.exameSegundoDedoMaoEsquerda || '';
+        this.exameTerceiroDedoMaoEsquerda = data.exameTerceiroDedoMaoEsquerda || '';
+        this.exameQuartoDedoMaoEsquerda = data.exameQuartoDedoMaoEsquerda || '';
+        this.exameQuintoDedoMaoEsquerda = data.exameQuintoDedoMaoEsquerda || '';
+
+        this.examePrimeiroDedoMaoDireita = data.examePrimeiroDedoMaoDireita || '';
+        this.exameSegundoDedoMaoDireita = data.exameSegundoDedoMaoDireita || '';
+        this.exameTerceiroDedoMaoDireita = data.exameTerceiroDedoMaoDireita || '';
+        this.exameQuartoDedoMaoDireita = data.exameQuartoDedoMaoDireita || '';
+        this.exameQuintoDedoMaoDireita = data.exameQuintoDedoMaoDireita || '';
+
